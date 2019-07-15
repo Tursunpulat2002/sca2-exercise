@@ -41,21 +41,32 @@ const zip = (arr1, arr2) => {
   // TODO - write a function which combines two arrays into an array of 2-element arrays and returns -1
   // if the two arrays are of unequal length
 	// Example: zip([1, 2, 3], [5, 3, 1]) === [[1, 5], [2, 3], [3, 1]]
-	arr3 = [arr1, arr2]
+	const arr3 = []
 	if (arr1.length != arr2.length){
 		return -1
 	}else{
+		for (let i = 0; i < arr1.length; i++) {
+			arr3.push([arr1[i], arr2[i]]);
+		}
 		return arr3
 	}
 };
 
 const unzip = arr => {
-  // TODO - Write a function which does the opposite of `zip()`
+	// TODO - Write a function which does the opposite of `zip()`
+	
 };
 
 const shiftRight = (str, num) => {
   // TODO - write a function which shifts a string `num` characters to the right
-  // Example = shiftThree("Hello") === "lloHe"
+	// Example = shiftThree("Hello") === "lloHe"
+	arr1 = str.split('');
+	for (let i = 0; i < num; i++) {
+		const l = arr1.shift();
+		arr1.push(l);
+	}
+	newStr = arr1.join('')
+	return newStr
 };
 
 const announceDate = () => {
@@ -74,4 +85,6 @@ assert([2, 3][0] === 2);
 //console.log(reverse('Hello how are you'));
 //console.log(uniqueOnes([2,2,2,3,4,2,3,2,5,6,7,8,5,1,1]));
 //console.log(factorial(6));
-//console.log(zip([1, 2, 3], [5, 3, 1, 2]));
+//console.log(zip([1, 2, 3], [5, 3, 1]));
+console.log(unzip());
+//console.log(shiftRight('Hello', 24));
