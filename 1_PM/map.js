@@ -18,6 +18,8 @@ const triple = () => {
 
 Array.prototype.map = function(fun) {
   // TODO
+  const arr = this
+  return fun(arr)
 };
 
 console.log(arr.map(triple));
