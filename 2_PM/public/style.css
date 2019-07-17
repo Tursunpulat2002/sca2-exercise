@@ -1,0 +1,52 @@
+body {
+  background-color: rgb(50, 143, 206);
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(63, 187, 236);
+}
+
+li {
+  float: left;
+  margin: 10px;
+  justify-content: space-between;
+  
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: black;
+  color: white;
+}
+
+.active {
+  background-color: rgb(151, 233, 195);
+}
+
+.cities {
+  font-size: 35px;
+}
+
+#London {
+  height: 700px;
+}
+
+#Paris {
+  height: 700px;
+}
+
+#Tokyo {
+  height: 700px;
+}
